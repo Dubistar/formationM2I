@@ -10,7 +10,9 @@
  * 
   */
 
-const multiplyByTwo = (array) => {}
+const multiplyByTwo = (array) => (
+    array.map(i => i *2)
+)
 
 
 /**
@@ -23,7 +25,9 @@ const multiplyByTwo = (array) => {}
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const filterNameStartByA = (array) => {}
+const filterNameStartByA = (array) => (
+    array.filter(nom => nom.charAt(0).toLowerCase() === "a")
+)
 
 /**
  * Utiliser la fonction .reduce sur le tableau passé en paramètre
@@ -35,7 +39,9 @@ const filterNameStartByA = (array) => {}
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const sum = (array) => {}
+const sum = (array) => (
+    array.reduce()
+)
 
 /**
  * Utiliser la fonction .find sur le tableau passé en paramètre
