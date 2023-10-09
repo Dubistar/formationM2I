@@ -36,10 +36,8 @@ const extractRest = ([,b,c],...rest) => [b,c]
  * contrainte:
  * - interdiction d'utiliser l'opérateur "." pour accéder au champ "name"
  */
-let obj = {name: "toto", age: 42}
-const extractName = (name, ...rest) => {}
+const extractName = ({name}) => name
 
-console.log(extractName(name, rest))
 /**
  * utilisez la décomposition pour retourner l'objet utilisateur sans le champ "password"
  * 
