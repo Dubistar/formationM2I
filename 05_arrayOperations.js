@@ -64,16 +64,9 @@ const sum = (array) => (
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-let array = [
-    {id:1, name:'John'},
-    {id:1, name:'Doe'},
-    {id:1, name:'Foo'},
-    {id:1, name:'Bar'}
-]
 
 const findUserById = (array, id) => (
     array.find((user)=>user.id === id).name
 )
-console.log(findUserById(array, 3))
 
 module.exports = {multiplyByTwo, filterNameStartByA, sum, findUserById};
