@@ -27,7 +27,7 @@ const multiplyByTwo = (array) => (
   */
 
 const filterNameStartByA = (array) => (
-    array.filter(nom => nom.charAt(0).toLowerCase() === "a")
+    array.filter(nom => nom.startsWith("A"))
 )
 
 /**
