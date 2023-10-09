@@ -12,7 +12,7 @@
  *  - interdiction d'utiliser slice ou splice
  */
 
-const extractFirstTwo = ([a,b,c]) => [a,b]
+const extractFirstTwo = ([a,b]) => [a,b]
 
 
 /**
@@ -22,7 +22,7 @@ const extractFirstTwo = ([a,b,c]) => [a,b]
  * exemple: [1, 2, 3] => [2, 3]
  */
 
-const extractRest = ([,b,c],...rest) => [b,c]
+const extractRest = ([,...rest]) => rest
 
 
 /**
@@ -49,5 +49,5 @@ const extractName = ({name}) => name
  * 
  */
 
-const removePassword = ({name, ...rest}) => ({name});
+const removePassword = ({password, ...rest}) => rest;
 module.exports = {extractFirstTwo, extractRest, extractName, removePassword}
